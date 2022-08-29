@@ -168,8 +168,9 @@ color: var(--accent-color);
     background-color: #D9D9D9;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4) ), url("../images/img-hero.jpg");
     background-size: cover;
-    justify-content: center;
-         }
+    background-position: center;
+    background-repeat: no-repeat;
+     }
 
 .hero-container {
     display: flex;
@@ -238,11 +239,12 @@ color: var(--accent-color);
     width: 270px;
      flex-basis: calc(( 100% - 90px ) / 4 );
 }
-.feature-list-btn {
-        width: 270px;
-    height: 120px;
-    padding: 25px 100px;
-    margin-bottom: 30px;
+.feature-list-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       height: 120px;
+       margin-bottom: 30px;
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #F5F4FA;;
@@ -401,19 +403,15 @@ display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-btn {
-    display: flex;
-    align-items: center;
     border-color:  transparent;
     border-radius: 4px;
-    height: 38px;
-    min-width: 103px;
-    justify-content: center;
+     padding: 6px 22px;
     background-color: #F5F4FA;
     color: var(--primary-text-color);
     font-weight: 500;
         font-size: 16px;
-        line-height: 26px;
-               text-align: center;
+        line-height: 1.62;
+        text-align: center;
         letter-spacing: 0.03em;
 }
 .portfolio-btn-text {
